@@ -1,3 +1,4 @@
+![image](https://github.com/user-attachments/assets/78aba357-4e56-473f-8a2e-ac5ef72d2dcd)
 # ใบงานการทดลอง HTML
 
 ## จุดประสงค์การเรียนรู้
@@ -75,5 +76,6 @@
   
 ### บันทึกผลการทดลอง
 [บันทึกภาพหน้าจอของผลลัพธ์การทดลอง]
+![image](https://github.com/user-attachments/assets/bed9ec45-a123-48bf-a880-f384960c332b)
 
 
