@@ -165,10 +165,127 @@
 ### บันทึกผลการทดลอง
 - รหัสเอกสาร HTML ที่เขียน:
 ```html
-[วางโค้ด HTML ที่นี่]
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แกลเลอรีสินค้า</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .gallery-container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery img {
+            width: calc(50% - 10px);
+            cursor: pointer;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
+        .caption {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .back-button {
+            display: none;
+            width: 100px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .back-button:hover {
+            background-color: #45a049;
+        }
+        .large-image {
+            display: none;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function openImage(src, caption) {
+            document.querySelector('.gallery-container').style.display = 'none';
+            document.querySelector('.large-image').style.display = 'block';
+            document.querySelector('.large-image img').src = src;
+            document.querySelector('.large-image .caption').textContent = caption;
+            document.querySelector('.back-button').style.display = 'block';
+        }
+
+        function goBack() {
+            document.querySelector('.gallery-container').style.display = 'block';
+            document.querySelector('.large-image').style.display = 'none';
+            document.querySelector('.back-button').style.display = 'none';
+        }
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>แกลเลอรีสินค้า</h1>
+    </header>
+
+    <div class="gallery-container">
+        <div class="gallery">
+            <div>
+                <img src="images/products/2022-McLaren-720S.jpg" alt="Image 1" onclick="openImage('images/products/2022-McLaren-720S.jpg')">
+                <div class="caption">2022-McLaren-720S ราคา 35,000,000 บาท</div>
+            </div>
+            <div>
+                <img src="images/products/Used-2009-Lamborghini-Murcielago-LP640-Roadster-Service-Records.jpg" alt="Image 2" onclick="openImage('images/products/Used-2009-Lamborghini-Murcielago-LP640-Roadster-Service-Records.jpg')">
+                <div class="caption">Lamborghini-Murcielago ราคา 29,000,000 บาท</div>
+            </div>
+            <div>
+                <img src="images/products/Cycle-News-2022-Ducati-Panigale-V4-S-Review.jpg" alt="Image 3" onclick="openImage('images/products/Cycle-News-2022-Ducati-Panigale-V4-S-Review.jpg')">
+                <div class="caption">2022-Ducati-Panigale 450,000 บาท</div>
+            </div>
+            <div>
+                <img src="images/products/OIP.jpg" alt="Image 4" onclick="openImage('images/products/OIP.jpg')">
+                <div class="caption">Kawasaki h2r ราคา 700,000 บาท</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="large-image">
+        <img src="" alt="Large Image">
+        <div class="caption"></div>
+    </div>
+
+    <a class="back-button" onclick="goBack()">กลับ</a>
+
+</body>
+</html>
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
+![image](https://github.com/user-attachments/assets/78fe05ee-1efb-4f2d-8d8e-41d9373a1055)
 
 
 
