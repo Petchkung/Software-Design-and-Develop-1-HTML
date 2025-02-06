@@ -412,8 +412,8 @@
 
 ```
 - ภาพผลลัพธ์:
-[วางภาพ screenshot ที่นี่]
-![image](https://github.com/user-attachments/assets/7f691bc0-3f8c-4739-b24d-e5165b8afad8)
+![image](https://github.com/user-attachments/assets/d0147291-a953-4e10-a7d6-602998e19590)
+
 
 
 
