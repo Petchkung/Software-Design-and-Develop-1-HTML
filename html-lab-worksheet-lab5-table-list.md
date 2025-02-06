@@ -65,7 +65,8 @@
 ### แบบฝึกหัด
 1. สร้างตารางแสดงข้อมูลส่วนตัว
 2. สร้างรายการเมนูอาหาร
-
+[วางโค้ด HTML ที่นี่]
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -168,10 +169,9 @@
     </table>
 </body>
 </html> 
-```html
-
 ```
 - ภาพผลลัพธ์:
 [วางภาพ screenshot ที่นี่]
-![image](https://github.com/user-attachments/assets/6d69e7b8-59f2-448d-8867-9b03a663ff72)
+![image](https://github.com/user-attachments/assets/79f67454-f7dc-422d-836f-198be6b6f3e6)
+
 
